@@ -14,9 +14,13 @@ namespace ClassMembers.Models
 
     public class Product : IProduct
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public double Price { get; set; }
+
+        public string name;
+        public string description;
+        public double price;
+        public string Name { get { return name;} set { this.name = value;  } }
+        public string Description { get { return description; } set { this.description = value; } }
+        public double Price { get { return price; } set { this.price = value; } }
 
         public enum Brand
         {
